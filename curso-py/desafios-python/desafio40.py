@@ -8,9 +8,10 @@ nota1 = float(input('Digite a primeira nota: '))
 nota2 = float(input('Digite a segunda nota: '))
 media = (nota1 + nota2) / 2
 
+# if 7 > media >= 5 - Outra forma de pensar
 if media < 5.0:
     print('REPROVADO!')
-elif media >= 5 and media <= 6.9:
+elif media >= 5 and media <= 7:
     print('RECUPEREÇÃO!') 
 else:
     print('APROVADO!')
