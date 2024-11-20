@@ -1,0 +1,15 @@
+Explicação dos comentários:
+Inicialização das variáveis:
+maior e menor são usadas para armazenar os maiores e menores valores de peso.
+Laço for:
+O for repete exatamente 5 vezes, uma para cada pessoa.
+A variável pess começa no valor 1 e vai até 5.
+Entrada de peso:
+input coleta o peso digitado pelo usuário.
+float é usado para permitir valores decimais (como 70.5).
+Primeira pessoa:
+O primeiro peso serve como referência inicial para maior e menor.
+Comparações em outras pessoas:
+Atualizamos maior e menor somente se o peso atual for maior ou menor que os valores registrados.
+Saída formatada:
+Exibimos os resultados com duas casas decimais, representando o maior e menor peso.
