@@ -1,7 +1,8 @@
-from num2words import num2words
+seq = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove',
+       'dez', 'onze', 'doze', 'treze', 'Catorze', 'quinze', 'dezesseis', 'dezessete',
+       'dezoito', 'dezenove','vinte')
 
-# Convertendo um número para texto em português
-numero = 123
-texto = num2words(numero, lang='pt_BR')
-
-print(texto)  # saída: "cento e vinte e três"
+num = int(input('Digite um número entre 0 e 20: '))
+while num < 0 or num > 20:
+    num = int(input('Valor inválido! Por favor, digite um número entre 0 e 20: '))
+print(f'Você digitou o número {seq[num]}.')
