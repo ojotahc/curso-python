@@ -1,0 +1,27 @@
+Passo a passo: Inicialização: No início do código, antes do laço for, nós pegamos o primeiro número da lista sorteada (na variável resultado[0]) e o usamos tanto como o maior quanto como o menor valor.
+
+python Copiar código maior = menor = resultado[0] Dessa forma, o primeiro número já é considerado como "maior" e "menor" inicialmente.
+
+Laço for: O laço for percorre cada número da lista resultado, e para cada número (vamos chamar de n), ele faz duas comparações:
+
+Se o número atual n for maior que o maior, então o valor de maior é atualizado com o número atual. Se o número atual n for menor que o menor, então o valor de menor é atualizado com o número atual. Aqui está o código do laço:
+
+python Copiar código for n in resultado: if n > maior: # Se o número for maior que o 'maior' maior = n # Atualiza 'maior' com o número 'n' if n < menor: # Se o número for menor que o 'menor' menor = n # Atualiza 'menor' com o número 'n' Primeira comparação (if n > maior): Se o número n for maior que o valor atual de maior, então o número n se torna o novo maior valor. Segunda comparação (if n < menor): Se o número n for menor que o valor atual de menor, então o número n se torna o novo menor valor. Exemplo prático: Vamos supor que os números sorteados sejam: [3, 8, 1, 7, 5].
+
+Início:
+
+maior = 3 menor = 3 Primeira iteração (n = 3):
+
+n > maior (3 > 3) não é verdade, então maior continua 3. n < menor (3 < 3) não é verdade, então menor continua 3. Segunda iteração (n = 8):
+
+n > maior (8 > 3) é verdade, então maior passa a ser 8. n < menor (8 < 3) não é verdade, então menor continua 3. Terceira iteração (n = 1):
+
+n > maior (1 > 8) não é verdade, então maior continua 8. n < menor (1 < 3) é verdade, então menor passa a ser 1. Quarta iteração (n = 7):
+
+n > maior (7 > 8) não é verdade, então maior continua 8. n < menor (7 < 1) não é verdade, então menor continua 1. Quinta iteração (n = 5):
+
+n > maior (5 > 8) não é verdade, então maior continua 8. n < menor (5 < 1) não é verdade, então menor continua 1. Resultado final:
+
+maior = 8 menor = 1 Assim, ao final do laço, o maior valor é 8 e o menor valor é 1, e o código imprime isso.
+
+Resumo: O laço percorre todos os números sorteados, comparando cada um com o valor atual de maior e menor e, se encontrar um valor maior ou menor, ele atualiza as variáveis. Ao final do laço, você tem o maior e o menor número.
